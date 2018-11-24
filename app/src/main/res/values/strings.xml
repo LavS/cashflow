@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Cashflow</string>
     <string name="start_game">Start</string>
+    <string name="choose_profession">Choose profession:</string>
 </resources>

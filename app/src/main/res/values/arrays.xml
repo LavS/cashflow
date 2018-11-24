@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="professions">
+        <item>&lt;Случайная профессия&gt;</item>
+        <item>Автомеханик</item>
+        <item>Адвокат</item>
+        <item>Водитель грузовика</item>
+        <item>Врач</item>
+        <item>Дворник</item>
+        <item>Инженер</item>
+        <item>Медсестра</item>
+        <item>Менеджер</item>
+        <item>Офицер полиции</item>
+        <item>Пилот авиалиний</item>
+        <item>Секретарь</item>
+        <item>Учитель</item>
+    </string-array>
+</resources>

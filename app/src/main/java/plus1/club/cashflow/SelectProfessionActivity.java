@@ -1,16 +1,17 @@
 package plus1.club.cashflow;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.content.pm.ActivityInfo;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SelectProfessionActivity extends ListActivity {
 
     private ArrayAdapter<String> mAdapter;
+    public final static String EXTRA_MESSAGE = "EXTRA_MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,8 @@ public class SelectProfessionActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        Toast.makeText(getApplicationContext(),
-                "Вы выбрали " + l.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ProfessionActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, Integer.toString(position));
+        startActivity(intent);
     }
 }

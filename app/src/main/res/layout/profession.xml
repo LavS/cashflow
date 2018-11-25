@@ -52,7 +52,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textRevenue"
+                            android:id="@+id/textHeadlineRevenue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -63,36 +63,92 @@
                             android:textColor="@android:color/white"
                             android:textSize="24sp" />
 
-                        <TextView
-                            android:id="@+id/textLabelSalary"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Зарплата:" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelInterestDividents"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Проценты/Дивиденты:" />
+                            <TextView
+                                android:id="@+id/textLabelSalary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="5"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Зарплата:" />
 
-                        <TextView
-                            android:id="@+id/textLabelRealEstateBusiness"
+                            <TextView
+                                android:id="@+id/textSalary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Недвижимость/Бизнес:" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelInterestDividents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="5"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Проценты/Дивиденты:" />
+
+                            <TextView
+                                android:id="@+id/textInterestDividents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$0" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelRealEstateBusiness"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="5"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Недвижимость/Бизнес:" />
+
+                            <TextView
+                                android:id="@+id/textRealEstateBusiness"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$0" />
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -103,15 +159,34 @@
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textLabelPassiveRevenue"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Пассивный доход:"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelPassiveRevenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:background="@android:color/white"
+                                android:text="Пассивный доход:"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textPassiveRevenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$0"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/textLabelPassiveRevenueInfo"
@@ -121,16 +196,36 @@
                             android:background="@android:color/white"
                             android:text="(Денежный поток от Процентов/Дивидендов + Недвижимость/Бизнес)" />
 
-                        <TextView
-                            android:id="@+id/textLabelFullRevenue"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Общий доход:"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelFullRevenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="5"
+                                android:background="@android:color/white"
+                                android:text="Общий доход:"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textFullRevenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -156,7 +251,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textCosts"
+                            android:id="@+id/textHeadlineCosts"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -325,7 +420,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/text2"
+                            android:id="@+id/textLabelMonthCashFlow"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
@@ -358,7 +453,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textAssets"
+                            android:id="@+id/textHeadlineAssets"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -426,7 +521,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textLiabilities"
+                            android:id="@+id/textHeadlineLiabilities"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

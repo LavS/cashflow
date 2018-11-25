@@ -43,6 +43,32 @@
     </string-array>
 
     <!--Адвокат-->
+    <string-array name="profession2">
+        <item name="costs_per_child">380</item>
+        <item name="salary">7500</item>
+
+        <item name="taxes">1830</item>
+        <item name="house_payments">1100</item>
+        <item name="education_payments">390</item>
+        <item name="car_payments">220</item>
+        <item name="credit_cards_payments">180</item>
+        <item name="small_loans_payments">50</item>
+        <item name="other_expenses">1650</item>
+
+        <item name="savings">400</item>
+
+        <item name="mortgage">115000</item>
+        <item name="education_credit">78000</item>
+        <item name="car_credit">11000</item>
+        <item name="credit_cards">6000</item>
+        <item name="small_loans">1000</item>
+
+        <item name="revenue">7500</item>
+        <item name="consumption">5420</item>
+        <item name="cash_flow">2080</item>
+    </string-array>
+
+    <!--Адвокат-->
     <string-array name="profession3">
         <item name="costs_per_child">380</item>
         <item name="salary">7500</item>

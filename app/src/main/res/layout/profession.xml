@@ -46,8 +46,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
@@ -155,14 +157,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
                             android:orientation="horizontal">
 
                             <TextView
@@ -172,7 +174,6 @@
                                 android:layout_weight="5"
                                 android:background="@android:color/white"
                                 android:text="Пассивный доход:"
-                                android:textSize="16sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -184,22 +185,22 @@
                                 android:gravity="right"
                                 android:paddingRight="5dp"
                                 android:text="$0"
-                                android:textSize="16sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
                         <TextView
                             android:id="@+id/textLabelPassiveRevenueInfo"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="@android:color/white"
-                            android:text="(Денежный поток от Процентов/Дивидендов + Недвижимость/Бизнес)" />
+                            android:text="(Денежный поток от Процентов/Дивидендов + Недвижимость/Бизнес)"
+                            android:textSize="12sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
                             android:orientation="horizontal">
 
                             <TextView
@@ -207,10 +208,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="2dp"
-                                android:layout_weight="5"
+                                android:layout_weight="4"
                                 android:background="@android:color/white"
                                 android:text="Общий доход:"
-                                android:textSize="16sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -223,7 +223,6 @@
                                 android:gravity="right"
                                 android:paddingRight="5dp"
                                 android:text="$****"
-                                android:textSize="16sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -245,8 +244,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
@@ -262,86 +260,232 @@
                             android:textColor="@android:color/white"
                             android:textSize="24sp" />
 
-                        <TextView
-                            android:id="@+id/textLabelTaxes"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Налоги:" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelMortagePayments"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Выплаты по ипотеке:" />
+                            <TextView
+                                android:id="@+id/textLabelTaxes"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Налоги:" />
 
-                        <TextView
-                            android:id="@+id/textLabelLoanPaymentsForEducation"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Выплаты по кредиту на образование:" />
+                            <TextView
+                                android:id="@+id/textTaxes"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textLabelPaymentsForCarloan"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Выплаты по кредиту на машину:" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelCreditCardPayments"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Выплаты по кредитным карточкам:" />
+                            <TextView
+                                android:id="@+id/textLabelMortagePayments"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Выплаты по ипотеке:" />
 
-                        <TextView
-                            android:id="@+id/textLabelPaymentsForSmallLoans"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Выплаты по мелким кредитам:" />
+                            <TextView
+                                android:id="@+id/textMortagePayments"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
 
-                        <TextView
-                            android:id="@+id/textLabelOtherExpenses"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Прочие расходы:" />
+                        </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textLabelExpensesForChildren"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Расходы на детей:" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelLoanPaymentsForEducation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Выплаты по кредиту на образование:" />
+
+                            <TextView
+                                android:id="@+id/textLoanPaymentsForEducation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelPaymentsForCarloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Выплаты по кредиту на машину:" />
+
+                            <TextView
+                                android:id="@+id/textPaymentsForCarloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelCreditCardPayments"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Выплаты по кредитным карточкам:" />
+
+                            <TextView
+                                android:id="@+id/textCreditCardPayments"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelPaymentsForSmallLoans"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Выплаты по мелким кредитам:" />
+
+                            <TextView
+                                android:id="@+id/textPaymentsForSmallLoans"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelOtherExpenses"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Прочие расходы:" />
+
+                            <TextView
+                                android:id="@+id/textOtherExpenses"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelExpensesForChildren"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Расходы на детей:" />
+
+                            <TextView
+                                android:id="@+id/textExpensesForChildren"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$0" />
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -350,35 +494,70 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textLabelSpace"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:background="@android:color/white" />
 
-                        <TextView
-                            android:id="@+id/textLabelExpensesPerChild"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Расходы на одного ребенка:" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelFullCosts"
+                            <TextView
+                                android:id="@+id/textLabelExpensesPerChild"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:text="Расходы на одного ребенка:" />
+
+                            <TextView
+                                android:id="@+id/textExpensesPerChild"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Общий расход:"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelFullCosts"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:text="Общий расход:"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textFullCosts"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="2"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -397,8 +576,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
@@ -408,26 +589,46 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:background="@android:color/white"
-                            android:text="(Примечание. Все игроки начинают игру без детей)" />
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="(Примечание. Все игроки начинают игру без детей)"
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textLabelMonthCashFlow"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="50"
-                            android:background="@android:color/white"
-                            android:text="Месячный денежный поток:"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelMonthCashFlow"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:text="Месячный денежный поток:"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textMonthCashFlow"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -448,7 +649,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="3"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
@@ -464,18 +665,36 @@
                             android:textColor="@android:color/white"
                             android:textSize="24sp" />
 
-                        <TextView
-                            android:id="@+id/textLabelSaving"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Сбережения:" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelSaving"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Сбережения:" />
+
+                            <TextView
+                                android:id="@+id/textSaving"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
 
                         <TextView
-                            android:id="@+id/textLabelEmptyAssets1"
+                            android:id="@+id/textLabelEmptyAssets"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="1dp"
@@ -516,7 +735,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:background="@android:color/black"
                         android:orientation="vertical">
 
@@ -532,56 +751,148 @@
                             android:textColor="@android:color/white"
                             android:textSize="24sp" />
 
-                        <TextView
-                            android:id="@+id/textLabelMortage"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Ипотека на дом:" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelLoanForEducation"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Кредиты на образование:" />
+                            <TextView
+                                android:id="@+id/textLabelMortage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Ипотека на дом:" />
 
-                        <TextView
-                            android:id="@+id/textLabelForCarloan"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
-                            android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Кредиты на машину:" />
+                            <TextView
+                                android:id="@+id/textMortage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="2"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textLabelCreditCard"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Кредитные карточки:" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textLabelSmallLoans"
+                            <TextView
+                                android:id="@+id/textLabelLoanForEducation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="4"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Кредиты на образование:" />
+
+                            <TextView
+                                android:id="@+id/textLoanForEducation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="11"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="1dp"
-                            android:layout_marginRight="1dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:color/white"
-                            android:text="Мелкие кредиты:" />
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelForCarloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Кредиты на машину:" />
+
+                            <TextView
+                                android:id="@+id/textCarloan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelCreditCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Кредитные карточки:" />
+
+                            <TextView
+                                android:id="@+id/textCreditCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textLabelSmallLoans"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:paddingLeft="5dp"
+                                android:text="Мелкие кредиты:" />
+
+                            <TextView
+                                android:id="@+id/textSmallLoans"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:gravity="right"
+                                android:paddingRight="5dp"
+                                android:text="$****" />
+                        </LinearLayout>
 
                     </LinearLayout>
                 </LinearLayout>

@@ -36,14 +36,53 @@ public class ProfessionActivity extends AppCompatActivity {
         editProfession.setText(getResources().getStringArray(R.array.professions)[profession]);
 
         // Поиск заполняемых полей
-        TextView editSalary = (TextView) findViewById(R.id.textSalary);
-        TextView editFullRevenue = (TextView) findViewById(R.id.textFullRevenue);
+        TextView textSalary = (TextView) findViewById(R.id.textSalary);
+        TextView textFullRevenue = (TextView) findViewById(R.id.textFullRevenue);
+
+        TextView textTaxes = (TextView) findViewById(R.id.textTaxes);
+        TextView textMortagePayments = (TextView) findViewById(R.id.textMortagePayments);
+        TextView textLoanPaymentsForEducation = (TextView) findViewById(R.id.textLoanPaymentsForEducation);
+        TextView textPaymentsForCarloan = (TextView) findViewById(R.id.textPaymentsForCarloan);
+        TextView textCreditCardPayments = (TextView) findViewById(R.id.textCreditCardPayments);
+        TextView textPaymentsForSmallLoans = (TextView) findViewById(R.id.textPaymentsForSmallLoans);
+        TextView textOtherExpenses = (TextView) findViewById(R.id.textOtherExpenses);
+        TextView textFullCosts = (TextView) findViewById(R.id.textFullCosts);
+
+        TextView textExpensesPerChild = (TextView) findViewById(R.id.textExpensesPerChild);
+        TextView textMonthCashFlow = (TextView) findViewById(R.id.textMonthCashFlow);
+
+        TextView textSaving = (TextView) findViewById(R.id.textSaving);
+        TextView textMortage = (TextView) findViewById(R.id.textMortage);
+        TextView textLoanForEducation = (TextView) findViewById(R.id.textLoanForEducation);
+        TextView textCarloan = (TextView) findViewById(R.id.textCarloan);
+        TextView textCreditCard = (TextView) findViewById(R.id.textCreditCard);
+        TextView textSmallLoans = (TextView) findViewById(R.id.textSmallLoans);
 
         // Получение знанчений для заполнения
         numbers = getResources().getStringArray(arrays[profession-1]).clone();
 
         // Заполнение карточки профессии
-        editSalary.setText(numbers[0]);
-        editFullRevenue.setText(numbers[1]);
+        textSalary.setText("$"+numbers[0]);
+        textFullRevenue.setText("$"+numbers[1]);
+
+        textTaxes.setText("$"+numbers[2]);
+        textMortagePayments.setText("$"+numbers[3]);
+        textLoanPaymentsForEducation.setText("$"+numbers[4]);
+        textPaymentsForCarloan.setText("$"+numbers[5]);
+        textCreditCardPayments.setText("$"+numbers[6]);
+        textPaymentsForSmallLoans.setText("$"+numbers[7]);
+        textOtherExpenses.setText("$"+numbers[8]);
+        textFullCosts.setText("$"+numbers[9]);
+
+        textExpensesPerChild.setText("$"+numbers[10]);
+        textMonthCashFlow.setText("$"+numbers[11]);
+
+        textSaving.setText("$"+numbers[12]);
+        textMortage.setText("$"+numbers[13]);
+        textLoanForEducation.setText("$"+numbers[14]);
+        textCarloan.setText("$"+numbers[15]);
+        textCreditCard.setText("$"+numbers[16]);
+        textSmallLoans.setText("$"+numbers[17]);
+
     }
 }

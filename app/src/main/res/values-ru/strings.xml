@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Денежный поток</string>
     <string name="start_game">Новая игра</string>
+    <string name="choose_profession">Выберите профессию:</string>
 </resources>

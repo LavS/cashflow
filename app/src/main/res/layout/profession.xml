@@ -1,991 +1,992 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <LinearLayout
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/textLabelProfession"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/profession" />
-
-                <TextView
-                    android:id="@+id/textProfession"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:background="@android:color/black"
-                    android:gravity="center"
-                    android:text="@string/profession"
-                    android:textAllCaps="true"
-                    android:textColor="@android:color/white"
-                    android:textSize="24sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <TextView
+                            android:id="@+id/textLabelProfession"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:layout_weight="2"
-                            android:background="@android:color/black"
-                            android:orientation="vertical"
-                            android:layout_marginStart="5dp">
+                            android:gravity="center"
+                            android:text="@string/profession" />
 
-                            <TextView
-                                android:id="@+id/textHeadlineRevenue"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@android:color/black"
-                                android:gravity="center"
-                                android:text="@string/income"
-                                android:textAllCaps="true"
-                                android:textColor="@android:color/white"
-                                android:textSize="24sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelSalary"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="5"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/salary"
-                                    android:layout_marginStart="1dp" />
-
-                                <TextView
-                                    android:id="@+id/textSalary"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelInterestDividents"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="1dp"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="5"
-                                    android:background="@android:color/white"
-                                    android:paddingStart="5dp"
-                                    android:paddingLeft="5dp"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/interest_dividends" />
-
-                                <TextView
-                                    android:id="@+id/textInterestDividents"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/zero"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelRealEstateBusiness"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="5"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/real_estate_business"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textRealEstateBusiness"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/zero"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
+                        <TextView
+                            android:id="@+id/textProfession"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:layout_weight="3"
                             android:background="@android:color/black"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelPassiveRevenue"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="5"
-                                    android:background="@android:color/white"
-                                    android:text="@string/passive_income"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/textPassiveRevenue"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/zero"
-                                    android:textStyle="bold"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <TextView
-                                android:id="@+id/textLabelPassiveRevenueInfo"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="@android:color/white"
-                                android:text="@string/note_about_cashflow"
-                                android:textSize="12sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelFullRevenue"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:text="@string/total_income"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/textFullRevenue"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:textStyle="bold"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="2"
-                            android:background="@android:color/black"
-                            android:orientation="vertical"
-                            android:layout_marginStart="5dp">
-
-                            <TextView
-                                android:id="@+id/textHeadlineCosts"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@android:color/black"
-                                android:gravity="center"
-                                android:text="@string/expenses"
-                                android:textAllCaps="true"
-                                android:textColor="@android:color/white"
-                                android:textSize="24sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelTaxes"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/taxes"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textTaxes"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelMortagePayments"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/mortgage_payment"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textMortagePayments"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelLoanPaymentsForEducation"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginStart="1dp"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/education_payment"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textLoanPaymentsForEducation"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelPaymentsForCarloan"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/car_loan_payment"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textPaymentsForCarloan"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelCreditCardPayments"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/credit_card_payment"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textCreditCardPayments"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelPaymentsForSmallLoans"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/bank_loan_payment"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textPaymentsForSmallLoans"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelOtherExpenses"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/other_expenses"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textOtherExpenses"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelExpensesForChildren"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/children_payment"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textExpensesForChildren"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/zero"
-                                    android:layout_marginEnd="1dp"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
+                            android:gravity="center"
+                            android:text="@string/profession"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="3"
-                            android:background="@android:color/black"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/textLabelSpace"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="@android:color/white" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelExpensesPerChild"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:text="@string/payment_per_child" />
-
-                                <TextView
-                                    android:id="@+id/textExpensesPerChild"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="4"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelFullCosts"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:text="@string/total_expenses"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/textFullCosts"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingEnd="5dp"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:layout_weight="2"
-                            android:background="@android:color/black"
-                            android:orientation="vertical"
-                            android:layout_marginStart="5dp">
-
-                            <TextView
-                                android:id="@+id/textNote"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="50"
-                                android:background="@android:color/white"
-                                android:paddingLeft="5dp"
-                                android:paddingRight="5dp"
-                                android:text="@string/note_about_children"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="5dp"
-                            android:layout_weight="3"
-                            android:background="@android:color/black"
                             android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="50"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="false"
                                 android:orientation="horizontal">
 
-                                <TextView
-                                    android:id="@+id/textLabelMonthCashFlow"
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:text="@string/cashflow"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/textMonthCashFlow"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:layout_weight="3"
-                            android:background="@android:color/black"
-                            android:orientation="vertical"
-                            android:layout_marginStart="5dp">
-
-                            <TextView
-                                android:id="@+id/textHeadlineAssets"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@android:color/black"
-                                android:gravity="center"
-                                android:text="@string/assets"
-                                android:textAllCaps="true"
-                                android:textColor="@android:color/white"
-                                android:textSize="24sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelSaving"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/savings"
-                                    android:paddingStart="5dp"
-                                    android:layout_marginStart="1dp" />
-
-                                <TextView
-                                    android:id="@+id/textSaving"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-                            </LinearLayout>
-
-                            <TextView
-                                android:id="@+id/textLabelEmptyAssets"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="1dp"
-                                android:layout_marginRight="1dp"
-                                android:layout_weight="4"
-                                android:background="@android:color/white" />
-
-                            <TextView
-                                android:id="@+id/textLabelEmptyAssets2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="1dp"
-                                android:layout_marginRight="1dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/white" />
-
-                            <TextView
-                                android:id="@+id/textLabelEmptyAssets3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="1dp"
-                                android:layout_marginRight="1dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/white" />
-
-                            <TextView
-                                android:id="@+id/textLabelEmptyAssets4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="1dp"
-                                android:layout_marginRight="1dp"
-                                android:layout_marginBottom="2dp"
-                                android:layout_weight="1"
-                                android:background="@android:color/white" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="2"
-                            android:background="@android:color/black"
-                            android:orientation="vertical"
-                            android:layout_marginEnd="5dp">
-
-                            <TextView
-                                android:id="@+id/textHeadlineLiabilities"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@android:color/black"
-                                android:gravity="center"
-                                android:text="@string/liabilities"
-                                android:textAllCaps="true"
-                                android:textColor="@android:color/white"
-                                android:textSize="24sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelMortage"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/mortgage"
-                                    android:layout_marginStart="1dp"
-                                    android:paddingStart="5dp" />
-
-                                <TextView
-                                    android:id="@+id/textMortage"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
                                     android:layout_weight="2"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-                            </LinearLayout>
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="5dp">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/textHeadlineRevenue"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/black"
+                                        android:gravity="center"
+                                        android:text="@string/income"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="24sp" />
 
-                                <TextView
-                                    android:id="@+id/textLabelLoanForEducation"
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelSalary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="5"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/salary"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textSalary"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelInterestDividents"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="5"
+                                            android:background="@android:color/white"
+                                            android:paddingStart="5dp"
+                                            android:paddingLeft="5dp"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/interest_dividends" />
+
+                                        <TextView
+                                            android:id="@+id/textInterestDividents"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/zero"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelRealEstateBusiness"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="5"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/real_estate_business"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textRealEstateBusiness"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/zero"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="4"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/education_loan"
-                                    android:paddingStart="5dp"
-                                    android:layout_marginStart="1dp" />
-
-                                <TextView
-                                    android:id="@+id/textLoanForEducation"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="11"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:id="@+id/textLabelForCarloan"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/car_loan"
-                                    android:paddingStart="5dp"
-                                    android:layout_marginStart="1dp" />
-
-                                <TextView
-                                    android:id="@+id/textCarloan"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
+                                    android:layout_margin="5dp"
                                     android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
-                            </LinearLayout>
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
 
-                                <TextView
-                                    android:id="@+id/textLabelCreditCard"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/credit_card"
-                                    android:paddingStart="5dp"
-                                    android:layout_marginStart="1dp" />
+                                        <TextView
+                                            android:id="@+id/textLabelPassiveRevenue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="5"
+                                            android:background="@android:color/white"
+                                            android:text="@string/passive_income"
+                                            android:textStyle="bold" />
 
-                                <TextView
-                                    android:id="@+id/textCreditCard"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
+                                        <TextView
+                                            android:id="@+id/textPassiveRevenue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/zero"
+                                            android:textStyle="bold"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
 
-                            </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/textLabelPassiveRevenueInfo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white"
+                                        android:text="@string/note_about_cashflow"
+                                        android:textSize="12sp" />
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
 
-                                <TextView
-                                    android:id="@+id/textLabelSmallLoans"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginLeft="1dp"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="1"
-                                    android:background="@android:color/white"
-                                    android:paddingLeft="5dp"
-                                    android:text="@string/bank_loan"
-                                    android:paddingStart="5dp"
-                                    android:layout_marginStart="1dp" />
+                                        <TextView
+                                            android:id="@+id/textLabelFullRevenue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:text="@string/total_income"
+                                            android:textStyle="bold" />
 
-                                <TextView
-                                    android:id="@+id/textSmallLoans"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_marginBottom="2dp"
-                                    android:layout_weight="3"
-                                    android:background="@android:color/white"
-                                    android:gravity="right"
-                                    android:paddingRight="5dp"
-                                    android:text="@string/dollars"
-                                    android:paddingEnd="5dp"
-                                    android:layout_marginEnd="1dp" />
+                                        <TextView
+                                            android:id="@+id/textFullRevenue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:textStyle="bold"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
                             </LinearLayout>
 
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="2"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textHeadlineCosts"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/black"
+                                        android:gravity="center"
+                                        android:text="@string/expenses"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="24sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelTaxes"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/taxes"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textTaxes"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelMortagePayments"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/mortgage_payment"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textMortagePayments"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelLoanPaymentsForEducation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/education_payment"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textLoanPaymentsForEducation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelPaymentsForCarloan"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/car_loan_payment"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textPaymentsForCarloan"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelCreditCardPayments"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/credit_card_payment"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textCreditCardPayments"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelPaymentsForSmallLoans"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/bank_loan_payment"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textPaymentsForSmallLoans"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelOtherExpenses"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/other_expenses"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textOtherExpenses"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelExpensesForChildren"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/children_payment"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textExpensesForChildren"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/zero"
+                                            android:layout_marginEnd="1dp"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="3"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textLabelSpace"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:background="@android:color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="4"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelExpensesPerChild"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:text="@string/payment_per_child" />
+
+                                        <TextView
+                                            android:id="@+id/textExpensesPerChild"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingEnd="5dp"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="4"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelFullCosts"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:text="@string/total_expenses"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/textFullCosts"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingEnd="5dp"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_weight="2"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textNote"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="50"
+                                        android:background="@android:color/white"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="@string/note_about_children"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="3"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="50"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelMonthCashFlow"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:text="@string/cashflow"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/textMonthCashFlow"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="3"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textHeadlineAssets"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/black"
+                                        android:gravity="center"
+                                        android:text="@string/assets"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="24sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelSaving"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/savings"
+                                            android:paddingStart="5dp"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textSaving"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/textLabelEmptyAssets"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="4"
+                                        android:background="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/textLabelEmptyAssets2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/textLabelEmptyAssets3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/textLabelEmptyAssets4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="2"
+                                    android:background="@android:color/black"
+                                    android:orientation="vertical"
+                                    android:layout_marginEnd="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textHeadlineLiabilities"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@android:color/black"
+                                        android:gravity="center"
+                                        android:text="@string/liabilities"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="24sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelMortage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/mortgage"
+                                            android:layout_marginStart="1dp"
+                                            android:paddingStart="5dp" />
+
+                                        <TextView
+                                            android:id="@+id/textMortage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="2"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelLoanForEducation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="4"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/education_loan"
+                                            android:paddingStart="5dp"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textLoanForEducation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="11"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelForCarloan"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/car_loan"
+                                            android:paddingStart="5dp"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textCarloan"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelCreditCard"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/credit_card"
+                                            android:paddingStart="5dp"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textCreditCard"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textLabelSmallLoans"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white"
+                                            android:paddingLeft="5dp"
+                                            android:text="@string/bank_loan"
+                                            android:paddingStart="5dp"
+                                            android:layout_marginStart="1dp" />
+
+                                        <TextView
+                                            android:id="@+id/textSmallLoans"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="2dp"
+                                            android:layout_weight="3"
+                                            android:background="@android:color/white"
+                                            android:gravity="right"
+                                            android:paddingRight="5dp"
+                                            android:text="@string/dollars"
+                                            android:paddingEnd="5dp"
+                                            android:layout_marginEnd="1dp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
                     </LinearLayout>
+                </ScrollView>
+            </HorizontalScrollView>
 
-                </LinearLayout>
-
-            </LinearLayout>
-        </ScrollView>
-    </HorizontalScrollView>
-
-</LinearLayout>
+        </LinearLayout>

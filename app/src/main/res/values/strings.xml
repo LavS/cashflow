@@ -1,5 +1,36 @@
 <resources>
     <string name="app_name">Cashflow</string>
     <string name="start_game">Start</string>
+    <string name="dollars">$****</string>
     <string name="choose_profession">Choose profession:</string>
+    <string name="profession">Profession</string>
+    <string name="income">Income</string>
+    <string name="salary">Salary:</string>
+    <string name="interest_dividends">Interest/Dividends:</string>
+    <string name="real_estate_business">Real Estate/Business:</string>
+    <string name="note_about_children">(All players start the game without children.)</string>
+    <string name="zero">$0</string>
+    <string name="passive_income">Passive income:</string>
+    <string name="note_about_cashflow">(Cash Flow from Percents / Dividends + Real Estate / Business)</string>
+    <string name="total_income">Total income:</string>
+    <string name="expenses">Expenses</string>
+    <string name="taxes">Taxes:</string>
+    <string name="mortgage_payment">Mortgage payments:</string>
+    <string name="education_payment">Education loan payments:</string>
+    <string name="credit_card_payment">Credit card payments:</string>
+    <string name="other_expenses">Other expenses:</string>
+    <string name="total_expenses">Total expenses:</string>
+    <string name="car_loan_payment">Car loan payments:</string>
+    <string name="bank_loan_payment">Bank loan payments:</string>
+    <string name="children_payment">Children payments:</string>
+    <string name="payment_per_child">Payment per 1 child:</string>
+    <string name="assets">Assets</string>
+    <string name="liabilities">Liabilities</string>
+    <string name="bank_loan">Bank loan:</string>
+    <string name="credit_card">Credit cards:</string>
+    <string name="car_loan">Car loan:</string>
+    <string name="education_loan">Education loan:</string>
+    <string name="mortgage">Mortgage:</string>
+    <string name="savings">Savings:</string>
+    <string name="cashflow">Month cashflow:</string>
 </resources>

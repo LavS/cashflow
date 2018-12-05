@@ -1,98 +1,73 @@
 <resources>
-    <!--Список профессий-->
+    <!--Professions list-->
     <string-array name="professions">
-        <item>&lt;Случайная профессия&gt;</item>
-        <item>Автомеханик</item>
-        <item>Адвокат</item>
-        <item>Водитель грузовика</item>
-        <item>Врач</item>
-        <item>Дворник</item>
-        <item>Инженер</item>
-        <item>Медсестра</item>
-        <item>Менеджер</item>
-        <item>Офицер полиции</item>
-        <item>Пилот авиалиний</item>
-        <item>Секретарь</item>
-        <item>Учитель</item>
+        <item>&lt;Random profession&gt;</item>
+        <item name="profession1">Airline Pilot</item>
+        <item name="profession2">Business Manager</item>
+        <item name="profession3">Doctor (MD)</item>
+        <item name="profession4">Engineer</item>
+        <item name="profession5">Janitor</item>
+        <item name="profession6">Lawyer</item>
+        <item name="profession7">Mechanic</item>
+        <item name="profession8">Nurse</item>
+        <item name="profession9">Police Officer</item>
+        <item name="profession10">Secretary</item>
+        <item name="profession11">Teacher</item>
+        <item name="profession12">Truck Driver</item>
     </string-array>
 
-    <!--Автомеханик-->
+    <!--Airline Pilot-->
     <string-array name="profession1">
-        <item name="salary">2000</item>
-        <item name="revenue">2000</item>
+        <item name="salary">9500</item>
+        <item name="revenue">9500</item>
 
-        <item name="taxes">360</item>
-        <item name="house_payments">300</item>
+        <item name="taxes">2350</item>
+        <item name="house_payments">1330</item>
         <item name="education_payments">0</item>
-        <item name="car_payments">60</item>
-        <item name="credit_cards_payments">60</item>
+        <item name="car_payments">300</item>
+        <item name="credit_cards_payments">660</item>
         <item name="small_loans_payments">50</item>
-        <item name="other_expenses">450</item>
-        <item name="consumption">1280</item>
+        <item name="other_expenses">2210</item>
+        <item name="consumption">6900</item>
 
-        <item name="costs_per_child">110</item>
-        <item name="cash_flow">720</item>
-
-        <item name="savings">670</item>
-        <item name="mortgage">31000</item>
-        <item name="education_credit">0</item>
-        <item name="car_credit">3000</item>
-        <item name="credit_cards">2000</item>
-        <item name="small_loans">1000</item>
-    </string-array>
-
-    <!--Адвокат-->
-    <string-array name="profession2">
-        <item name="salary">7500</item>
-        <item name="revenue">7500</item>
-
-        <item name="taxes">1830</item>
-        <item name="house_payments">1100</item>
-        <item name="education_payments">390</item>
-        <item name="car_payments">220</item>
-        <item name="credit_cards_payments">180</item>
-        <item name="small_loans_payments">50</item>
-        <item name="other_expenses">1650</item>
-        <item name="consumption">5420</item>
-
-        <item name="costs_per_child">380</item>
-        <item name="cash_flow">2080</item>
+        <item name="costs_per_child">480</item>
+        <item name="cash_flow">2600</item>
 
         <item name="savings">400</item>
-        <item name="mortgage">115000</item>
-        <item name="education_credit">78000</item>
-        <item name="car_credit">11000</item>
-        <item name="credit_cards">6000</item>
-        <item name="small_loans">1000</item>
-    </string-array>
-
-    <!--Водитель грузовика-->
-    <string-array name="profession3">
-        <item name="salary">2500</item>
-        <item name="revenue">2500</item>
-
-        <item name="taxes">460</item>
-        <item name="house_payments">400</item>
-        <item name="education_payments">0</item>
-        <item name="car_payments">80</item>
-        <item name="credit_cards_payments">60</item>
-        <item name="small_loans_payments">50</item>
-        <item name="other_expenses">570</item>
-        <item name="consumption">1620</item>
-
-        <item name="costs_per_child">140</item>
-        <item name="cash_flow">880</item>
-
-        <item name="savings">750</item>
-        <item name="mortgage">38000</item>
+        <item name="mortgage">143000</item>
         <item name="education_credit">0</item>
-        <item name="car_credit">4000</item>
-        <item name="credit_cards">2000</item>
+        <item name="car_credit">15000</item>
+        <item name="credit_cards">22000</item>
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Врач-->
-    <string-array name="profession4">
+    <!--Business Manager-->
+    <string-array name="profession2">
+        <item name="salary">4600</item>
+        <item name="revenue">4600</item>
+
+        <item name="taxes">910</item>
+        <item name="house_payments">700</item>
+        <item name="education_payments">60</item>
+        <item name="car_payments">120</item>
+        <item name="credit_cards_payments">90</item>
+        <item name="small_loans_payments">50</item>
+        <item name="other_expenses">1000</item>
+        <item name="consumption">2930</item>
+
+        <item name="costs_per_child">240</item>
+        <item name="cash_flow">1670</item>
+
+        <item name="savings">400</item>
+        <item name="mortgage">75000</item>
+        <item name="education_credit">12000</item>
+        <item name="car_credit">6000</item>
+        <item name="credit_cards">3000</item>
+        <item name="small_loans">1000</item>
+    </string-array>
+
+    <!--Doctor (MD)-->
+    <string-array name="profession3">
         <item name="salary">13200</item>
         <item name="revenue">13200</item>
 
@@ -116,7 +91,32 @@
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Дворник-->
+    <!--Engineer-->
+    <string-array name="profession4">
+        <item name="salary">4900</item>
+        <item name="revenue">4900</item>
+
+        <item name="taxes">1050</item>
+        <item name="house_payments">700</item>
+        <item name="education_payments">60</item>
+        <item name="car_payments">140</item>
+        <item name="credit_cards_payments">120</item>
+        <item name="small_loans_payments">50</item>
+        <item name="other_expenses">1090</item>
+        <item name="consumption">3210</item>
+
+        <item name="costs_per_child">250</item>
+        <item name="cash_flow">1690</item>
+
+        <item name="savings">400</item>
+        <item name="mortgage">75000</item>
+        <item name="education_credit">12000</item>
+        <item name="car_credit">7000</item>
+        <item name="credit_cards">4000</item>
+        <item name="small_loans">1000</item>
+    </string-array>
+
+    <!--Janitor-->
     <string-array name="profession5">
         <item name="salary">1600</item>
         <item name="revenue">1600</item>
@@ -141,33 +141,58 @@
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Инженер-->
+    <!--Lawyer-->
     <string-array name="profession6">
-        <item name="salary">4900</item>
-        <item name="revenue">4900</item>
+        <item name="salary">7500</item>
+        <item name="revenue">7500</item>
 
-        <item name="taxes">1050</item>
-        <item name="house_payments">700</item>
-        <item name="education_payments">60</item>
-        <item name="car_payments">140</item>
-        <item name="credit_cards_payments">120</item>
+        <item name="taxes">1830</item>
+        <item name="house_payments">1100</item>
+        <item name="education_payments">390</item>
+        <item name="car_payments">220</item>
+        <item name="credit_cards_payments">180</item>
         <item name="small_loans_payments">50</item>
-        <item name="other_expenses">1090</item>
-        <item name="consumption">3210</item>
+        <item name="other_expenses">1650</item>
+        <item name="consumption">5420</item>
 
-        <item name="costs_per_child">250</item>
-        <item name="cash_flow">1690</item>
+        <item name="costs_per_child">380</item>
+        <item name="cash_flow">2080</item>
 
         <item name="savings">400</item>
-        <item name="mortgage">75000</item>
-        <item name="education_credit">12000</item>
-        <item name="car_credit">7000</item>
-        <item name="credit_cards">4000</item>
+        <item name="mortgage">115000</item>
+        <item name="education_credit">78000</item>
+        <item name="car_credit">11000</item>
+        <item name="credit_cards">6000</item>
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Медсестра-->
+    <!--Mechanic-->
     <string-array name="profession7">
+        <item name="salary">2000</item>
+        <item name="revenue">2000</item>
+
+        <item name="taxes">360</item>
+        <item name="house_payments">300</item>
+        <item name="education_payments">0</item>
+        <item name="car_payments">60</item>
+        <item name="credit_cards_payments">60</item>
+        <item name="small_loans_payments">50</item>
+        <item name="other_expenses">450</item>
+        <item name="consumption">1280</item>
+
+        <item name="costs_per_child">110</item>
+        <item name="cash_flow">720</item>
+
+        <item name="savings">670</item>
+        <item name="mortgage">31000</item>
+        <item name="education_credit">0</item>
+        <item name="car_credit">3000</item>
+        <item name="credit_cards">2000</item>
+        <item name="small_loans">1000</item>
+    </string-array>
+
+    <!--Nurse-->
+    <string-array name="profession8">
         <item name="salary">3100</item>
         <item name="revenue">3100</item>
 
@@ -191,32 +216,7 @@
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Менеджер-->
-    <string-array name="profession8">
-        <item name="salary">4600</item>
-        <item name="revenue">4600</item>
-
-        <item name="taxes">910</item>
-        <item name="house_payments">700</item>
-        <item name="education_payments">60</item>
-        <item name="car_payments">120</item>
-        <item name="credit_cards_payments">90</item>
-        <item name="small_loans_payments">50</item>
-        <item name="other_expenses">1000</item>
-        <item name="consumption">2930</item>
-
-        <item name="costs_per_child">240</item>
-        <item name="cash_flow">1670</item>
-
-        <item name="savings">400</item>
-        <item name="mortgage">75000</item>
-        <item name="education_credit">12000</item>
-        <item name="car_credit">6000</item>
-        <item name="credit_cards">3000</item>
-        <item name="small_loans">1000</item>
-    </string-array>
-
-    <!--Офицер полиции-->
+    <!--Police Officer-->
     <string-array name="profession9">
         <item name="salary">3000</item>
         <item name="revenue">3000</item>
@@ -241,33 +241,8 @@
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Пилот авиалиний-->
+    <!--Secretary-->
     <string-array name="profession10">
-        <item name="salary">9500</item>
-        <item name="revenue">9500</item>
-
-        <item name="taxes">2350</item>
-        <item name="house_payments">1330</item>
-        <item name="education_payments">0</item>
-        <item name="car_payments">300</item>
-        <item name="credit_cards_payments">660</item>
-        <item name="small_loans_payments">50</item>
-        <item name="other_expenses">2210</item>
-        <item name="consumption">6900</item>
-
-        <item name="costs_per_child">480</item>
-        <item name="cash_flow">2600</item>
-
-        <item name="savings">400</item>
-        <item name="mortgage">143000</item>
-        <item name="education_credit">0</item>
-        <item name="car_credit">15000</item>
-        <item name="credit_cards">22000</item>
-        <item name="small_loans">1000</item>
-    </string-array>
-
-    <!--Секретарь-->
-    <string-array name="profession11">
         <item name="salary">2500</item>
         <item name="revenue">2500</item>
 
@@ -291,8 +266,8 @@
         <item name="small_loans">1000</item>
     </string-array>
 
-    <!--Учитель-->
-    <string-array name="profession12">
+    <!--Teacher-->
+    <string-array name="profession11">
         <item name="salary">3300</item>
         <item name="revenue">3300</item>
 
@@ -313,6 +288,31 @@
         <item name="education_credit">12000</item>
         <item name="car_credit">5000</item>
         <item name="credit_cards">3000</item>
+        <item name="small_loans">1000</item>
+    </string-array>
+
+    <!--Truck Driver-->
+    <string-array name="profession12">
+        <item name="salary">2500</item>
+        <item name="revenue">2500</item>
+
+        <item name="taxes">460</item>
+        <item name="house_payments">400</item>
+        <item name="education_payments">0</item>
+        <item name="car_payments">80</item>
+        <item name="credit_cards_payments">60</item>
+        <item name="small_loans_payments">50</item>
+        <item name="other_expenses">570</item>
+        <item name="consumption">1620</item>
+
+        <item name="costs_per_child">140</item>
+        <item name="cash_flow">880</item>
+
+        <item name="savings">750</item>
+        <item name="mortgage">38000</item>
+        <item name="education_credit">0</item>
+        <item name="car_credit">4000</item>
+        <item name="credit_cards">2000</item>
         <item name="small_loans">1000</item>
     </string-array>
 </resources>

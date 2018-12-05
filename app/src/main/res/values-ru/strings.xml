@@ -1,5 +1,36 @@
 <resources>
     <string name="app_name">Денежный поток</string>
     <string name="start_game">Новая игра</string>
+    <string name="dollars">****$</string>
     <string name="choose_profession">Выберите профессию:</string>
+    <string name="profession">Профессия</string>
+    <string name="income">Доходы</string>
+    <string name="salary">Зарплата:</string>
+    <string name="interest_dividends">Проценты/Дивиденты:</string>
+    <string name="real_estate_business">Недвижимость/Бизнес:</string>
+    <string name="note_about_children">(Все игроки начинают игру без детей)</string>
+    <string name="zero">$0</string>
+    <string name="passive_income">Пассивный доход:</string>
+    <string name="note_about_cashflow">(Денежный поток от Процентов/Дивидендов + Недвижимость/Бизнес)</string>
+    <string name="total_income">Общий доход:</string>
+    <string name="expenses">Расходы</string>
+    <string name="taxes">Налоги:</string>
+    <string name="mortgage_payment">Выплаты по ипотеке:</string>
+    <string name="education_payment">Выплаты по кредиту на образование:</string>
+    <string name="credit_card_payment">Выплаты по кредитным карточкам:</string>
+    <string name="other_expenses">Прочие расходы:</string>
+    <string name="total_expenses">Общий расход:</string>
+    <string name="car_loan_payment">Выплаты по кредиту на машину:</string>
+    <string name="bank_loan_payment">Выплаты по мелким кредитам:</string>
+    <string name="children_payment">Расходы на детей:</string>
+    <string name="payment_per_child">Расходы на одного ребенка:</string>
+    <string name="assets">Активы</string>
+    <string name="liabilities">Пассивы</string>
+    <string name="bank_loan">Мелкие кредиты:</string>
+    <string name="credit_card">Кредитные карточки:</string>
+    <string name="car_loan">Кредиты на машину:</string>
+    <string name="education_loan">Кредиты на образование:</string>
+    <string name="mortgage">Ипотека на дом:</string>
+    <string name="savings">Сбережения:</string>
+    <string name="cashflow">Месячный денежный поток:</string>
 </resources>
